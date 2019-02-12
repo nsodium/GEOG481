@@ -19,6 +19,7 @@ class Student:
         #Random check for infection
         if (random.random() <= self.infectionRate):
             #Infect a random number of students from 0 to the room's pop'n
+            #TODO: Replace room.population with real field name
             for i in range(0, random.uniform(0, room.population)):
                 #TODO: Create new infected student object, will share a faculty
                 #with the current student but random schedule and residence
