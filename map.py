@@ -1,6 +1,9 @@
 # Created by: Shijin (Kevin) Yang
 # Pygame GUI to display the university of waterloo, and the movement of disease
 
+# Feb 26th, 2019 Metting
+# sensitivity test required
+
 import pygame as pg
 import sys
 from setup import *
@@ -12,13 +15,21 @@ class Map:
         self.screen = pg.display.set_mode((WIDTH, HEIGHT))
         pg.display.set_caption(TITLE)
         self.clock = pg.time.Clock()
+        self.font = pg.font.SysFont('Arial', 20)
         pg.key.set_repeat(500,100)
-        self.load_data()
+        self.load_data() 
+        
     
+    def draw_text(self):
+        word_surface = self.font.render("BRH", 0, YELLOW)
+        self.screen.blit(word_surface, (50,68))        
+        word_surface = self.font.render("MKV", 0, YELLOW)
+        self.screen.blit(word_surface, (35,36))          
+        
     def draw_campus_map(self):
         for x in range(10,12):
             for y in range(5,7):
-                Building(self, x, y, "BRH")     
+                Building(self, x, y, "BRH")
         for x in range(7,9):
             for y in range(40,42):
                 Building(self, x, y, "MKV")
@@ -232,6 +243,8 @@ class Map:
     def update(self):
         self.all_sprites.update()
     
+    # get the color for drawing the Map using:
+    # print(self.screen.get_at((self.disease.x,self.disease.y)))
     def draw_grid(self):
         for x in range(0, WIDTH, TILESIZE):
             pg.draw.line(self.screen, LIGHTGREY, (x, 0), (x, HEIGHT))
@@ -241,9 +254,11 @@ class Map:
     def draw(self):
         self.screen.fill(BGCOLOR)
         self.draw_grid()
+        self.draw_text()
         self.all_sprites.draw(self.screen)
         pg.display.flip()
         
+    
     def events(self):
         for event in pg.event.get():
             if event.type == pg.QUIT:
