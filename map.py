@@ -74,7 +74,7 @@ class Map:
         word_surface = self.font.render("STC", 0, YELLOW)
         self.screen.blit(word_surface, (335,370)) 
         word_surface = self.font.render("B1", 0, YELLOW)
-        self.screen.blit(word_surface, (397,360))      
+        self.screen.blit(word_surface, (392,360))      
         word_surface = self.font.render("ESC", 0, YELLOW)
         self.screen.blit(word_surface, (395,315))     
         word_surface = self.font.render("EIT", 0, YELLOW)
@@ -135,13 +135,13 @@ class Map:
         self.screen.blit(word_surface, (510,475)) 
         word_surface = self.font.render("GH", 0, YELLOW)
         self.screen.blit(word_surface, (465,427))   
-        word_surface = self.font.render("RCG", 0, YELLOW)
+        word_surface = self.font.render("RCH", 0, YELLOW)
         self.screen.blit(word_surface, (485,403))        
         word_surface = self.font.render("E2", 0, YELLOW)
         self.screen.blit(word_surface, (525,375)) 
         word_surface = self.font.render("DWE", 0, YELLOW)
         self.screen.blit(word_surface, (540,460))   
-        word_surface = self.font.render("CPH", 0, YELLOW)
+        word_surface = self.font.render("SCH", 0, YELLOW)
         self.screen.blit(word_surface, (565,380))  
         word_surface = self.font.render("CPH", 0, YELLOW)
         self.screen.blit(word_surface, (668,420))  
@@ -150,195 +150,227 @@ class Map:
         
         
     def draw_campus_map(self):
-        for x in range(10,12):
-            for y in range(5,7):
-                Building(self, x, y, "BRH")
-        for x in range(7,9):
-            for y in range(40,42):
-                Building(self, x, y, "MKV")
-        for x in range(6,8):
-            for y in range(44,46):
-                Building(self, x, y, "TH")
-        for x in range(0,2):
-            for y in range(45,47):
-                Building(self, x, y, "REV") 
-        for x in range(18,20):
-            for y in range(38,40):
-                Building(self, x, y, "V1")
-        for x in range(28,30):
-            for y in range(28,30):
-                Building(self, x, y, "FED")
-        for x in range(19,21):
-            for y in range(19,21):
-                Building(self, x, y, "WFF")
-        for x in range(29,31):
-            for y in range(15,17):
-                Building(self, x, y, "CIF")
-        for x in range(32,34):
-            for y in range(33,35):
-                Building(self, x, y, "UC")
-        for x in range(36,38):
-            for y in range(34,36):
-                Building(self, x, y, "PAC")
-        for x in range(39,41):
-            for y in range(38,40):
-                Building(self, x, y, "SLC")
-        for x in range(43,45):
-            for y in range(41,43):
-                Building(self, x, y, "QNC")
-        for x in range(44,46):
-            for y in range(36,38):
-                Building(self, x, y, "MC")
-        for x in range(43,45):
-            for y in range(29,31):
-                Building(self, x, y, "M3")
-        for x in range(42,44):
-            for y in range(26,28):
-                Building(self, x, y, "ERC")
-        for x in range(39,41):
-            for y in range(25,27):
-                Building(self, x, y, "BMH")
-        for x in range(36,38):
-            for y in range(26,28):
-                Building(self, x, y, "AHS")
-        for x in range(36,38):
-            for y in range(29,31):
-                Building(self, x, y, "LHI")
-        for x in range(45,47):
-            for y in range(25,27):
-                Building(self, x, y, "CSB")
-        for x in range(48,50):
-            for y in range(23,25):
-                Building(self, x, y, "COM")
-        for x in range(48,50):
-            for y in range(28,30):
-                Building(self, x, y, "GSC")
-        for x in range(50,52):
-            for y in range(35,37):
-                Building(self, x, y, "DC")
-        for x in range(47,49):
-            for y in range(37,39):
-                Building(self, x, y, "C2")
-        for x in range(48,50):
-            for y in range(41,43):
-                Building(self, x, y, "ESC")
-        for x in range(53,55):
-            for y in range(41,43):
-                Building(self, x, y, "EIT")
-        for x in range(47,49):
-            for y in range(45,47):
-                Building(self, x, y, "B1")
-        for x in range(45,47):
-            for y in range(46,48):
-                Building(self, x, y, "STC")
-        for x in range(43,45):
-            for y in range(44,46):
-                Building(self, x, y, "B2")
-        for x in range(43,45):
-            for y in range(50,52):
-                Building(self, x, y, "NH")
-        for x in range(52,54):
-            for y in range(55,57):
-                Building(self, x, y, "LIB")
-        for x in range(48,50):
-            for y in range(60,62):
-                Building(self, x, y, "ML")
-        for x in range(51,53):
-            for y in range(65,67):
-                Building(self, x, y, "EV1")
-        for x in range(48,50):
-            for y in range(66,68):
-                Building(self, x, y, "EV3")
-        for x in range(49,51):
-            for y in range(68,70):
-                Building(self, x, y, "EV2")
-        for x in range(52,54):
-            for y in range(73,75):
-                Building(self, x, y, "PAS")
-        for x in range(54,56):
-            for y in range(61,63):
-                Building(self, x, y, "AL")
-        for x in range(57,59):
-            for y in range(61,63):
-                Building(self, x, y, "TC")
-        for x in range(56,58):
-            for y in range(69,71):
-                Building(self, x, y, "HH")
-        for x in range(61,63):
-            for y in range(59,61):
-                Building(self, x, y, "SCH")
-        for x in range(59,61):
-            for y in range(55,57):
-                Building(self, x, y, "GH")
-        for x in range(61,63):
-            for y in range(52,54):
-                Building(self, x, y, "RCH")
-        for x in range(67,69):
-            for y in range(55,57):
-                Building(self, x, y, "DWE")
-        for x in range(70,72):
-            for y in range(50,52):
-                Building(self, x, y, "CPH")
-        for x in range(65,67):
-            for y in range(49,51):
-                Building(self, x, y, "E2")
-        for x in range(57,59):
-            for y in range(47,49):
-                Building(self, x, y, "PHY")
-        for x in range(58,60):
-            for y in range(41,43):
-                Building(self, x, y, "E3")
-        for x in range(65,67):
-            for y in range(35,37):
-                Building(self, x, y, "E5")
-        for x in range(67,69):
-            for y in range(36,38):
-                Building(self, x, y, "E7")
-        for x in range(71,73):
-            for y in range(35,37):
-                Building(self, x, y, "E6")
-        for x in range(72,74):
-            for y in range(32,34):
-                Building(self, x, y, "ECH")
-        for x in range(71,73):
-            for y in range(25,27):
-                Building(self, x, y, "EC4")
-        for x in range(62,64):
-            for y in range(25,27):
-                Building(self, x, y, "EC2")
-        for x in range(61,63):
-            for y in range(19,21):
-                Building(self, x, y, "EC3")
-        for x in range(71,73):
-            for y in range(17,19):
-                Building(self, x, y, "EC1")
-        for x in range(69,71):
-            for y in range(20,22):
-                Building(self, x, y, "EC5")
-        for x in range(42,44):
-            for y in range(14,16):
-                Building(self, x, y, "OPT")
-        for x in range(35,37):
-            for y in range(47,49):
-                Building(self, x, y, "HS")
-        for x in range(36,38):
-            for y in range(55,57):
-                Building(self, x, y, "STJ")
-        for x in range(29,31):
-            for y in range(56,58):
-                Building(self, x, y, "REN")
-        for x in range(32,34):
-            for y in range(62,64):
-                Building(self, x, y, "STP")
-        for x in range(36,38):
-            for y in range(68,70):
-                Building(self, x, y, "CGR")
-        for x in range(84,86):
-            for y in range(54,56):
-                Building(self, x, y, "CMH")
-        for x in range(87,89):
-            for y in range(52,54):
-                Building(self, x, y, "UWP")
+        for x in range(10,11):
+            for y in range(5,6):
+                Building(self, x, y, "BRH", 0, {})
+        for x in range(7,8):
+            for y in range(40,41):
+                Building(self, x, y, "MKV", 320, {})
+        for x in range(6,7):
+            for y in range(44,45):
+                Building(self, x, y, "TH", 0, {})
+        for x in range(0,1):
+            for y in range(45,46):
+                Building(self, x, y, "REV", 960, {}) 
+        for x in range(18,19):
+            for y in range(38,39):
+                Building(self, x, y, "V1", 1381, {})
+        for x in range(28,29):
+            for y in range(28,29):
+                Building(self, x, y, "FED", 0, {})
+        for x in range(19,20):
+            for y in range(19,20):
+                Building(self, x, y, "WFF", 0, {})
+        for x in range(29,30):
+            for y in range(15,16):
+                Building(self, x, y, "CIF", 0, {})
+        for x in range(32,33):
+            for y in range(33,34):
+                Building(self, x, y, "UC", 0, {})
+        for x in range(36,37):
+            for y in range(34,35):
+                Building(self, x, y, "PAC", 250,
+                         {"BET 100": 193, "GBDA 101": 57})
+        for x in range(39,40):
+            for y in range(38,39):
+                Building(self, x, y, "SLC", 0, {})
+        for x in range(43,44):
+            for y in range(41,42):
+                Building(self, x, y, "QNC", 587,
+                         {"ARTS 140", 587})
+        for x in range(44,45):
+            for y in range(36,37):
+                Building(self, x, y, "MC", 2257,
+                         {"CS 105": 224, "CS 137": 122, "EARTH 123": 125,
+                          "MATH 128": 107, "MATH 135": 1500, "MATH 136": 179})
+        for x in range(43,44):
+            for y in range(29,30):
+                Building(self, x, y, "M3", 2503,
+                         {"CHEM 120": 1909, "EARTH 121": 265,
+                          "GEOG 101": 329})
+        for x in range(42,43):
+            for y in range(26,27):
+                Building(self, x, y, "ERC", 0, {})
+        for x in range(39,40):
+            for y in range(25,26):
+                Building(self, x, y, "BMH", 417,
+                         {"HLTH 101": 417})
+        for x in range(36,37):
+            for y in range(26,27):
+                Building(self, x, y, "AHS", 1666,
+                         {"AHS 107": 757, "CHEM 100":78, "KIN 104": 291,
+                          "MATH 124": 293, "REC 100": 247})
+        for x in range(36,37):
+            for y in range(29,30):
+                Building(self, x, y, "LHI", 0, {})
+        for x in range(45,46):
+            for y in range(25,26):
+                Building(self, x, y, "CSB", 0, {})
+        for x in range(48,49):
+            for y in range(23,24):
+                Building(self, x, y, "COM", 0, {})
+        for x in range(48,49):
+            for y in range(28,29):
+                Building(self, x, y, "GSC", 0, {})
+        for x in range(50,51):
+            for y in range(35,36):
+                Building(self, x, y, "DC", 961,
+                         {"AFM 131":818, "GEOG 181": 143})
+        for x in range(47,48):
+            for y in range(37,38):
+                Building(self, x, y, "C2", 0, {})
+        for x in range(48,49):
+            for y in range(41,42):
+                Building(self, x, y, "ESC", 0, {})
+        for x in range(53,54):
+            for y in range(41,42):
+                Building(self, x, y, "EIT", 1225,
+                         {"CIVE 104": 226, "MATH 116": 999})
+        for x in range(47,48):
+            for y in range(45,46):
+                Building(self, x, y, "B1", 2324,
+                         {"MATH 137": 1560, "PHYS 111": 764})
+        for x in range(45,46):
+            for y in range(46,47):
+                Building(self, x, y, "STC", 1594,
+                         {"BIOL 130": 1455, "REC 120": 139})
+        for x in range(43,44):
+            for y in range(44,45):
+                Building(self, x, y, "B2", 0, {})
+        for x in range(43,44):
+            for y in range(50,51):
+                Building(self, x, y, "NH", 0, {})
+        for x in range(52,53):
+            for y in range(55,56):
+                Building(self, x, y, "LIB", 0, {})
+        for x in range(48,49):
+            for y in range(60,61):
+                Building(self, x, y, "ML", 452,
+                         {"ARTS 130": 433, "ENGL 191": 19})
+        for x in range(51,52):
+            for y in range(65,66):
+                Building(self, x, y, "EV1", 0, {})
+        for x in range(48,49):
+            for y in range(66,67):
+                Building(self, x, y, "EV3", 882,
+                         {"ENBUS 102": 126, "ENGL 109": 550,
+                          "ERS 100": 206})
+        for x in range(49,50):
+            for y in range(68,69):
+                Building(self, x, y, "EV2", 86,
+                         {"GEOG 100": 34, "INTEG 120": 52})
+        for x in range(52,53):
+            for y in range(73,74):
+                Building(self, x, y, "PAS", 1173,
+                         {"PSYCH 101": 1173})
+        for x in range(54,55):
+            for y in range(61,62):
+                Building(self, x, y, "AL", 441,
+                         {"ARBUS 101": 403, "CLAS 104": 38})
+        for x in range(57,58):
+            for y in range(61,62):
+                Building(self, x, y, "TC", 0, {})
+        for x in range(56,57):
+            for y in range(69,70):
+                Building(self, x, y, "HH", 892, 
+                         {"AFM 101": 789, "ENGL 193": 103})
+        for x in range(61,62):
+            for y in range(59,60):
+                Building(self, x, y, "SCH", 0, {})
+        for x in range(59,60):
+            for y in range(55,56):
+                Building(self, x, y, "GH", 0, {})
+        for x in range(61,62):
+            for y in range(52,53):
+                Building(self, x, y, "RCH", 3080,
+                         {"CHE 100": 154, "ENVS 178": 245, "ENVS 195": 289,
+                          "MATH 115": 1195, "PHYS 121": 543, "SPCOM 111": 64,
+                          "SPCOM 223": 590})
+        for x in range(67,68):
+            for y in range(55,56):
+                Building(self, x, y, "DWE", 1028,
+                         {"CHE 180": 64, "MATH 127": 964})
+        for x in range(70,71):
+            for y in range(50,51):
+                Building(self, x, y, "CPH", 88,
+                         {"ENVE 100": 88})
+        for x in range(65,66):
+            for y in range(49,50):
+                Building(self, x, y, "E2", 912,
+                         {"CS 135": 912})
+        for x in range(57,58):
+            for y in range(47,48):
+                Building(self, x, y, "PHY", 849,
+                         {"CS 115": 849})
+        for x in range(58,59):
+            for y in range(41,42):
+                Building(self, x, y, "E3", 0, {})
+        for x in range(65,66):
+            for y in range(35,36):
+                Building(self, x, y, "E5", 0, {})
+        for x in range(67,68):
+            for y in range(36,37):
+                Building(self, x, y, "E7", 2216,
+                         {"CHE 102": 1121, "ECE 105": 499, "MATH 117": 596})
+        for x in range(71,72):
+            for y in range(35,36):
+                Building(self, x, y, "E6", 0, {})
+        for x in range(72,73):
+            for y in range(32,33):
+                Building(self, x, y, "ECH", 0, {})
+        for x in range(71,72):
+            for y in range(25,26):
+                Building(self, x, y, "EC4", 0, {})
+        for x in range(62,63):
+            for y in range(25,26):
+                Building(self, x, y, "EC2", 0, {})
+        for x in range(61,62):
+            for y in range(19,20):
+                Building(self, x, y, "EC3", 0, {})
+        for x in range(71,72):
+            for y in range(17,18):
+                Building(self, x, y, "EC1", 0, {})
+        for x in range(69,70):
+            for y in range(20,21):
+                Building(self, x, y, "EC5", 0, {})
+        for x in range(42,43):
+            for y in range(14,15):
+                Building(self, x, y, "OPT", 175,
+                         {"REC 101": 175})
+        for x in range(35,36):
+            for y in range(47,48):
+                Building(self, x, y, "HS", 0, {})
+        for x in range(36,37):
+            for y in range(55,56):
+                Building(self, x, y, "STJ", 0, {})
+        for x in range(29,30):
+            for y in range(56,57):
+                Building(self, x, y, "REN", 0, {})
+        for x in range(32,33):
+            for y in range(62,63):
+                Building(self, x, y, "STP", 2281,
+                         {"ECON 101": 1934, "ENVS 105": 192,
+                          "INDEV 100": 155})
+        for x in range(36,37):
+            for y in range(68,69):
+                Building(self, x, y, "CGR", 0, {})
+        for x in range(84,85):
+            for y in range(54,55):
+                Building(self, x, y, "CMH", 539)
+        for x in range(87,88):
+            for y in range(52,53):
+                Building(self, x, y, "UWP", 1650)                
+        
                 
     def load_data(self):
         pass
@@ -396,7 +428,7 @@ class Map:
                 if event.key == pg.K_UP:
                     self.disease.move(dy=-1)
                 if event.key == pg.K_DOWN:
-                    self.disease.move(dy=1)       
+                    self.disease.move(dy=1)              
     
     def show_start_screen(self):
         pass
