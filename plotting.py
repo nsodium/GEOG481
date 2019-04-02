@@ -2,11 +2,12 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-_infection_data = pd.read_csv(r'/Users/shijinyang/Desktop/infection_rate.csv')
+
+_infection_data = pd.read_csv(r'/Users/nahleen/Documents/GEOG481/infection_rate.csv')
 peak_infection_ind = np.argmax(_infection_data['infection_rate'])
 peak_rate = _infection_data['infection_rate'][peak_infection_ind]
 peak_rate_building = _infection_data['building'][peak_infection_ind]
-                        
+
 print(_infection_data[['building','infection_rate']])
 print("peak infection happend at section: ", np.argmax(_infection_data['infection_rate']), "\n")
 print("peak infection rate is: ", peak_rate, "\n")
@@ -20,7 +21,7 @@ plt.ylabel('infection rates')
 plt.show()
 '''
 
-_situ_data = pd.read_csv(r'/Users/shijinyang/Desktop/disease_csv.csv')
+_situ_data = pd.read_csv(r'/Users/nahleen/Documents/GEOG481/disease_csv.csv')
 _situ_data.fillna(0, inplace=True)
 _numeric_situ_data = _situ_data.select_dtypes(exclude=['object'])
 #print(_numeric_situ_data)

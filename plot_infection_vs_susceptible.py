@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-_infection_data = pd.read_csv(r'/Users/shijinyang/Desktop/infection_rate.csv')
+_infection_data = pd.read_csv(r'/Users/nahleen/Documents/GEOG481/infection_rate.csv')
 _infection = _infection_data['number_of_infection']
 _susceptible = _infection_data['number_of_susceptible']
 
