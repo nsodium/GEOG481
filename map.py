@@ -9,6 +9,7 @@ import sys
 from setup import *
 from disease_source import *
 
+
 class Map:
     def __init__(self):
         pg.init()
@@ -155,16 +156,16 @@ class Map:
                 Building(self, x, y, "BRH", 0, {})
         for x in range(7,8):
             for y in range(40,41):
-                Building(self, x, y, "MKV", 320, {})
+                Building(self, x, y, "MKV", 76, {})
         for x in range(6,7):
             for y in range(44,45):
                 Building(self, x, y, "TH", 0, {})
         for x in range(0,1):
             for y in range(45,46):
-                Building(self, x, y, "REV", 960, {}) 
+                Building(self, x, y, "REV", 187, {}) 
         for x in range(18,19):
             for y in range(38,39):
-                Building(self, x, y, "V1", 1381, {})
+                Building(self, x, y, "V1", 360, {})
         for x in range(28,29):
             for y in range(28,29):
                 Building(self, x, y, "FED", 0, {})
@@ -179,23 +180,23 @@ class Map:
                 Building(self, x, y, "UC", 0, {})
         for x in range(36,37):
             for y in range(34,35):
-                Building(self, x, y, "PAC", 250,
+                Building(self, x, y, "PAC", 61,
                          {"BET 100": 193, "GBDA 101": 57})
         for x in range(39,40):
             for y in range(38,39):
                 Building(self, x, y, "SLC", 0, {})
         for x in range(43,44):
             for y in range(41,42):
-                Building(self, x, y, "QNC", 587,
+                Building(self, x, y, "QNC", 144,
                          {"ARTS 140", 587})
         for x in range(44,45):
             for y in range(36,37):
-                Building(self, x, y, "MC", 2257,
+                Building(self, x, y, "MC", 552,
                          {"CS 105": 224, "CS 137": 122, "EARTH 123": 125,
                           "MATH 128": 107, "MATH 135": 1500, "MATH 136": 179})
         for x in range(43,44):
             for y in range(29,30):
-                Building(self, x, y, "M3", 2503,
+                Building(self, x, y, "M3", 613,
                          {"CHEM 120": 1909, "EARTH 121": 265,
                           "GEOG 101": 329})
         for x in range(42,43):
@@ -203,11 +204,11 @@ class Map:
                 Building(self, x, y, "ERC", 0, {})
         for x in range(39,40):
             for y in range(25,26):
-                Building(self, x, y, "BMH", 417,
+                Building(self, x, y, "BMH", 102,
                          {"HLTH 101": 417})
         for x in range(36,37):
             for y in range(26,27):
-                Building(self, x, y, "AHS", 1666,
+                Building(self, x, y, "AHS", 408,
                          {"AHS 107": 757, "CHEM 100":78, "KIN 104": 291,
                           "MATH 124": 293, "REC 100": 247})
         for x in range(36,37):
@@ -224,7 +225,7 @@ class Map:
                 Building(self, x, y, "GSC", 0, {})
         for x in range(50,51):
             for y in range(35,36):
-                Building(self, x, y, "DC", 961,
+                Building(self, x, y, "DC", 235,
                          {"AFM 131":818, "GEOG 181": 143})
         for x in range(47,48):
             for y in range(37,38):
@@ -234,15 +235,15 @@ class Map:
                 Building(self, x, y, "ESC", 0, {})
         for x in range(53,54):
             for y in range(41,42):
-                Building(self, x, y, "EIT", 1225,
+                Building(self, x, y, "EIT", 300,
                          {"CIVE 104": 226, "MATH 116": 999})
         for x in range(47,48):
             for y in range(45,46):
-                Building(self, x, y, "B1", 2324,
+                Building(self, x, y, "B1", 569,
                          {"MATH 137": 1560, "PHYS 111": 764})
         for x in range(45,46):
             for y in range(46,47):
-                Building(self, x, y, "STC", 1594,
+                Building(self, x, y, "STC", 390,
                          {"BIOL 130": 1455, "REC 120": 139})
         for x in range(43,44):
             for y in range(44,45):
@@ -255,34 +256,34 @@ class Map:
                 Building(self, x, y, "LIB", 0, {})
         for x in range(48,49):
             for y in range(60,61):
-                Building(self, x, y, "ML", 452,
+                Building(self, x, y, "ML", 111,
                          {"ARTS 130": 433, "ENGL 191": 19})
         for x in range(51,52):
             for y in range(65,66):
                 Building(self, x, y, "EV1", 0, {})
         for x in range(48,49):
             for y in range(66,67):
-                Building(self, x, y, "EV3", 882,
+                Building(self, x, y, "EV3", 216,
                          {"ENBUS 102": 126, "ENGL 109": 550,
                           "ERS 100": 206})
         for x in range(49,50):
             for y in range(68,69):
-                Building(self, x, y, "EV2", 86,
+                Building(self, x, y, "EV2", 21,
                          {"GEOG 100": 34, "INTEG 120": 52})
         for x in range(52,53):
             for y in range(73,74):
-                Building(self, x, y, "PAS", 1173,
+                Building(self, x, y, "PAS", 287,
                          {"PSYCH 101": 1173})
         for x in range(54,55):
             for y in range(61,62):
-                Building(self, x, y, "AL", 441,
+                Building(self, x, y, "AL", 108,
                          {"ARBUS 101": 403, "CLAS 104": 38})
         for x in range(57,58):
             for y in range(61,62):
                 Building(self, x, y, "TC", 0, {})
         for x in range(56,57):
             for y in range(69,70):
-                Building(self, x, y, "HH", 892, 
+                Building(self, x, y, "HH", 219, 
                          {"AFM 101": 789, "ENGL 193": 103})
         for x in range(61,62):
             for y in range(59,60):
@@ -292,25 +293,25 @@ class Map:
                 Building(self, x, y, "GH", 0, {})
         for x in range(61,62):
             for y in range(52,53):
-                Building(self, x, y, "RCH", 3080,
+                Building(self, x, y, "RCH", 754,
                          {"CHE 100": 154, "ENVS 178": 245, "ENVS 195": 289,
                           "MATH 115": 1195, "PHYS 121": 543, "SPCOM 111": 64,
                           "SPCOM 223": 590})
         for x in range(67,68):
             for y in range(55,56):
-                Building(self, x, y, "DWE", 1028,
+                Building(self, x, y, "DWE", 252,
                          {"CHE 180": 64, "MATH 127": 964})
         for x in range(70,71):
             for y in range(50,51):
-                Building(self, x, y, "CPH", 88,
+                Building(self, x, y, "CPH", 22,
                          {"ENVE 100": 88})
         for x in range(65,66):
             for y in range(49,50):
-                Building(self, x, y, "E2", 912,
+                Building(self, x, y, "E2", 223,
                          {"CS 135": 912})
         for x in range(57,58):
             for y in range(47,48):
-                Building(self, x, y, "PHY", 849,
+                Building(self, x, y, "PHY", 208,
                          {"CS 115": 849})
         for x in range(58,59):
             for y in range(41,42):
@@ -320,7 +321,7 @@ class Map:
                 Building(self, x, y, "E5", 0, {})
         for x in range(67,68):
             for y in range(36,37):
-                Building(self, x, y, "E7", 2216,
+                Building(self, x, y, "E7", 543,
                          {"CHE 102": 1121, "ECE 105": 499, "MATH 117": 596})
         for x in range(71,72):
             for y in range(35,36):
@@ -345,20 +346,20 @@ class Map:
                 Building(self, x, y, "EC5", 0, {})
         for x in range(42,43):
             for y in range(14,15):
-                Building(self, x, y, "OPT", 175,
+                Building(self, x, y, "OPT", 43,
                          {"REC 101": 175})
         for x in range(35,36):
             for y in range(47,48):
                 Building(self, x, y, "HS", 0, {})
         for x in range(36,37):
             for y in range(55,56):
-                Building(self, x, y, "STJ", 0, {})
+                Building(self, x, y, "STJ", 76, {})
         for x in range(29,30):
             for y in range(56,57):
-                Building(self, x, y, "REN", 0, {})
+                Building(self, x, y, "REN", 45, {})
         for x in range(32,33):
             for y in range(62,63):
-                Building(self, x, y, "STP", 2281,
+                Building(self, x, y, "STP", 559,
                          {"ECON 101": 1934, "ENVS 105": 192,
                           "INDEV 100": 155})
         for x in range(36,37):
@@ -366,12 +367,12 @@ class Map:
                 Building(self, x, y, "CGR", 0, {})
         for x in range(84,85):
             for y in range(54,55):
-                Building(self, x, y, "CMH", 539)
+                Building(self, x, y, "CMH", 132)
         for x in range(87,88):
             for y in range(52,53):
-                Building(self, x, y, "UWP", 1650)                
-        
+                Building(self, x, y, "UWP", 428)                
                 
+    
     def load_data(self):
         pass
     
@@ -379,14 +380,14 @@ class Map:
         # initialize all variables and do all the setup for a new game
         self.all_sprites = pg.sprite.Group()
         self.buildings = pg.sprite.Group()
-        self.disease = Disease(self, 10, 10)
+        self.disease = Disease(self)
         self.draw_campus_map()
     
     def run(self):
         # game loop - set self.playing = False to end the game
         self.playing = True
         while self.playing:
-            self.dt = self.clock.tick(FPS) / 1000
+            #self.dt = self.clock.tick(FPS) / 1000
             self.events()
             self.update()
             self.draw()
@@ -397,6 +398,20 @@ class Map:
         
     def update(self):
         self.all_sprites.update()
+        
+    def draw_path(self):
+        for i in range(len(self.disease.building_that_pass_through) - 1):
+            head_building_index = self.disease.building_that_pass_through[i]
+            tail_building_index = self.disease.building_that_pass_through[i+1]
+            head_building = None
+            tail_building = None
+            for b_object in self.buildings:
+                if head_building_index == b_object.name:
+                    head_building = b_object
+                if tail_building_index == b_object.name:
+                    tail_building = b_object
+            pg.draw.line(self.screen, RED, (head_building.x * TILESIZE, head_building.y * TILESIZE), 
+                         (tail_building.x * TILESIZE, tail_building.y * TILESIZE), 2)
     
     # get the color for drawing the Map using:
     # print(self.screen.get_at((self.disease.x,self.disease.y)))
@@ -410,6 +425,7 @@ class Map:
         self.screen.fill(BGCOLOR)
         self.draw_grid()
         self.draw_text()
+        self.draw_path()
         self.all_sprites.draw(self.screen)
         pg.display.flip()
         
@@ -421,6 +437,7 @@ class Map:
             if event.type == pg.KEYDOWN:
                 if event.key == pg.K_ESCAPE:
                     self.quit()
+                '''
                 if event.key == pg.K_LEFT:
                     self.disease.move(dx=-1)
                 if event.key == pg.K_RIGHT:
@@ -428,7 +445,10 @@ class Map:
                 if event.key == pg.K_UP:
                     self.disease.move(dy=-1)
                 if event.key == pg.K_DOWN:
-                    self.disease.move(dy=1)              
+                    self.disease.move(dy=1)   
+                '''
+                if event.key == pg.K_RETURN:
+                    self.disease.disease_spreading()
     
     def show_start_screen(self):
         pass
